@@ -611,3 +611,10 @@ def test_albumentations_mixup(single_target_csv):
 
     batch = next(iter(img_data.train_dataloader()))
     assert "lam" in batch["metadata"][0]
+
+
+def test_data_source_refactor(single_target_csv, tmpdir):
+
+    from flash.image.classification.data import ImageDataSourceCollection
+
+    ImageDataSourceCollection
