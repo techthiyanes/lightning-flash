@@ -6,7 +6,7 @@
 -r datatype_audio.txt
 
 # CI: limit the search space for pip/installation
-sahi ==0.8.19
+sahi ==0.11.14
 torch ==1.10.2
 torchaudio ==0.10.2
 torchvision ==0.11.3
